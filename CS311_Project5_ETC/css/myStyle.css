@@ -1,0 +1,80 @@
+
+html{
+    background-image: url("../img/background.jpeg");
+
+}
+
+.craps {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr
+    grid-gap: 75px;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(12, 77, 14, 0.60);
+
+  }
+
+  h1{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 75px;
+    color: whitesmoke;
+    border-style: solid;
+    height:80px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row-span: 1;
+}
+
+#die1{
+    -ms-grid-column-span: 1;
+    -ms-grid-row-span: 2;
+    text-align: right;
+}
+
+#die2{
+    -ms-grid-column-span: 2;
+    -ms-grid-row-span: 2;    
+    text-align: left;
+}
+
+.bank{
+    font-size: larger;
+    color: whitesmoke;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row-span: 3;
+}
+
+.wager{
+    font-size: larger;
+    color: whitesmoke;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row-span: 4;
+}
+
+.result{
+    font-size: larger;
+    color: whitesmoke;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    -ms-grid-row-span: 5;
+}
+
+button{
+    font-size:large;
+}
+
+.die{
+    width: 200px;
+    height: 200px;
+}
+

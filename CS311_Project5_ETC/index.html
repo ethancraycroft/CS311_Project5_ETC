@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CRAPS!</title>
+        <link rel="stylesheet" href="css/myStyle.css" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+        <link rel="apple-touch-icon" href="img/favicon.png">
+    </head>
+
+    <div id="winner">
+        <div class="craps" onload="hideDice('d1')" onload="hideDice('d2')">
+            
+            <h1 class="gameTitle">CRAPS!</h1>
+
+            <div id="die1">
+                <img class="die" id="d1" src="" alt="die1"">
+            </div>
+
+            <div id="die2">
+                <img class="die" id="d2" src="" alt="die2">        
+            </div>
+
+            <div class="bank">
+                <label for="bank"><strong>Balance: </strong>$</label>
+                <label id="bankBalance">100.00</label>
+            </div>
+
+            <div class="wager">
+                <label for="betPlaced"><strong>Enter your bet:</strong></label>
+                <input type="text" id = betPlaced>
+                <button onclick="rollDice()">ROLL!</button>
+            </div>
+
+            <div class="result">
+                <label id="result" for="result"></label>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='js/properties.js'></script>
+  
+</html>
